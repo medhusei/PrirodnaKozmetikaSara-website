@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Prirodna kozmetika Sara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+    <body>
+<section class="sub-header-blog">
+    <nav>
+        <a href="1pocetna.html"><img src="assets/21.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="1pocetna.html">Početna</a></li>
+                <li><a href="2proizvodi.html">Proizvodi</a></li>
+                <li><a href="3blog.html">Blog</a></li>
+                <li><a href="4kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+        <h1>~ Želite saznati više? ~</h1>
+        <p>Na našem blogu dijelimo informacije o benefitima prirodnih sastojaka u njezi kože.</p>
+    </div>
+</section>
+
+<!--Blog-->
+<section class="blog">
+
+    <div class="row">
+            <div class="blog-col">
+                <img src="assets/blog/neem glina.jpg">
+            </div>
+            <div class="blog-col">
+              <h3>Šta je neem i za šta se koristi?</h3>
+              <p>Latinski naziv neema, Azadirachta indica dolazi od perzijskog naziva Azad Dirakht.
+                  <br>
+                  Na svahili jeziku naziva se “drvo koje liječi 40 bolesti”, što pokazuje značaj neema u tradicionalnoj medicini.
+                  <br><br>
+                  Svaki dio ovog stabla ima ljekovitu vrijednost – od cvjetova, voća i sjemena do grančica, soka i korijena.</p>
+              <a href="3.1.neem.html" class="hero-btn">Čitaj dalje</a> 
+                
+            </div>
+    </div>
+
+    <div class="row">
+        <div class="blog-col">
+            <img src="assets/blog/cimet.jpg">
+        </div>
+        <div class="blog-col">
+          <h3>Cimet u njezi kože</h3>
+          <p>Beauty svijet poznat je po velikom broju korištenja različitih sastojaka sve s ciljem što boljih rezultata, 
+            a ono što možda ne znate je da već sada na kuhinjskim policama krijete beauty tajne koje garantiraju blistav 
+            i besprijekoran te su jednostavne i praktične za korištenje.</p>
+          <a href="3.2.cimet.html" class="hero-btn">Čitaj dalje</a> 
+            
+        </div>
+</div>
+
+<div class="row">
+    <div class="blog-col">
+        <img src="assets/blog/kafa.jpg">
+    </div>
+    <div class="blog-col">
+      <h3>Kafa kao piće i peeling</h3>
+      <p>Kafa ima niz beauty benefita i možemo je koristiti na bezbroj načina.</p>
+      <a href="3.3.kafa.html" class="hero-btn">Čitaj dalje</a> 
+        
+    </div>
+</div>
+
+<div class="row">
+    <div class="blog-col">
+        <img src="assets/blog/nar.jpg">
+    </div>
+    <div class="blog-col">
+      <h3>Nar - voće koje podmlađuje i regenerira kožu</h3>
+      <p>Posljednjih godina, zahvaljujući odličnim rezultatima istraživanja njegovih učinaka na zdravlje i ljepotu, nar zasluženo doživljava renesansu...</p>
+      <a href="3.4.nar.html" class="hero-btn">Čitaj dalje</a> 
+        
+    </div>
+</div>
+</section>
+
+<!--Footer-->
+<section class="footer">
+    <h4>~ Prirodna kozmetika Sara ~</h4>
+    <div class="icons-footer">
+        <a href="https://www.facebook.com"><img src="assets/fb.png"></a>
+        <a href="https://www.instagram.com"><img src="assets/ing.png"></a>
+
+    </div>
+
+</section>
+
+<!--JavaScript za show/hide Menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200";
+    }
+</script>
+    </body>
+</html>
+

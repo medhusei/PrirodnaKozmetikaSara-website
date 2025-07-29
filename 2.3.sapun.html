@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Prirodna kozmetika Sara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+    <body>
+<section class="sub-header-proizvodi">
+    <nav>
+        <a href="1pocetna.html"><img src="assets/21.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="1pocetna.html">Početna</a></li>
+                <li><a href="2proizvodi.html">Proizvodi</a></li>
+                <li><a href="3blog.html">Blog</a></li>
+                <li><a href="4kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+    <h1>~ Sve što vam je potrebno ~</h1>
+    <p>Sapuni za svaki tip kože</p>
+</div>
+</section>
+
+<!--Scrubovi-->
+<section class="proizvodi">
+    
+    <div class="row">
+        <div class="proizvodi-col">
+            <h2>Forest-fruit</h2>
+            <img src="assets/3sapuni/forestfruit.jpg">
+            <div class="layer2">
+                <h3><br>Sapun za osjetljivu kožu<br><br>Sastojci:<br>~ suncokretovo ulje<br>~ osušeni komadići šumskog voća<br>~ destilovana voda<br>~ eterično ulje kamilice<br>~ antioksidant-ekstrakt košpica grejpa<br>~ natrijev hidroksid</h3>
+            </div>
+        </div>
+        <div class="proizvodi-col">
+            <h2>Honey bee</h2>
+            <img src="assets/3sapuni/med.jpg">
+            <div class="layer2">
+                <h3><br>Sapun za mješovitu kožu<br><br>Sastojci:<br>~ suncokretovo ulje<br>~ med<br>~ nim<br>~ mlijeko<br>~ pšenica<br>~ destilovana voda<br>~ eterično ulje badema<br>~ antioksidant-ekstrakt košpica grejpa<br>~ natrijev hidroksid</h3>
+            </div>
+        </div>
+        <div class="proizvodi-col">
+            <h2>Green bubbles</h2>
+            <img src="assets/3sapuni/masline.jpg">
+            <div class="layer2">
+                <h3><br>Sapun za mješovitu kožu<br><br>Sastojci:<br>~ maslinovo ulje<br>~ nim<br>~ destilovana voda<br>~ eterično ulje mente<br>~ antioksidant-ekstrakt košpica grejpa<br>~ natrijev hidroksid</h3>
+            </div>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="proizvodi-col">
+            <h2>Yin-Yang</h2>
+            <img src="assets/3sapuni/crni.jpg">
+            <div class="layer2">
+                <h3>Sapun za masnu kožu<br><br>Sastojci:<br>~ crne masline<br>~ kakao<br>~ kokosovo ulje<br>~ maslinovo ulje<br>~ palmino ulje<br>~ destilovana voda<br>~ eterično ulje mente<br>~ antioksidant-ekstrakt košpica grejpa<br>~ natrijev hidroksid</h3></h3>
+            </div>
+        </div>
+        <div class="proizvodi-col">
+            <h2>Cinnamon evergreen</h2>
+            <img src="assets/3sapuni/neem.jpg">
+            <div class="layer2">
+                <h3>Sapun za masnu kožu<br><br>Sastojci:<br>~ nim<br>~ eterično ulje mente<br>~ cimet<br>~ destilovana voda<br>~ borove iglice<br>~ antioksidant-ekstrakt košpica grejpa<br>~ natrijev hidroksid</h3></h3>
+            </div>
+        </div>
+        <div class="proizvodi-col">
+            <h2>Milky rose</h2>
+            <img src="assets/3sapuni/ruža-mlijeko.jpg">
+            <div class="layer2">
+                <h3>Sapun za suhu kožu<br><br>Sastojci:<br>~ ružina vodica<br>~ latice ruže<br>~ mlijeko<br>~ destilovana voda<br>~ eterično ulje ruže<br>~ antioksidant-ekstrakt košpica grejpa<br>~ natrijev hidroksid</h3></h3>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!--Footer-->
+<section class="footer">
+    <h4>~ Prirodna kozmetika Sara ~</h4>
+    <div class="icons-footer">
+        <a href="https://www.facebook.com"><img src="assets/fb.png"></a>
+        <a href="https://www.instagram.com"><img src="assets/ing.png"></a>
+    </div>
+
+</section>
+
+<!--JavaScript za show/hide Menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200";
+    }
+</script>
+    </body>
+</html>
+

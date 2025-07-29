@@ -1,0 +1,499 @@
+style.css
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courgette', cursive;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(assets/2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header h1{
+    color: white;
+    text-decoration: none;
+    text-align: left;
+}
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 150px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+list-style: none;
+display: inline-block;
+padding: 8px 12px;
+position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #a36f3486;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+
+}
+.text-box{
+    width: 90%;
+    color: #fff;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box img{
+    width: 50%;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 24px;
+    color: #fff;
+}
+.hero-btn-pocetna{
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    margin-left: -120px;
+    cursor: pointer;
+    border-radius: 20%;
+}
+.hero-btn-pocetna:hover{
+    border: 1px solid #a36f3486;
+    background: #a36f3486;
+    transition: 1s;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:#fff;
+    border: 1px solid #fff;
+    border-radius: 80%;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #a36f3486;
+    background: #a36f3486;
+    transition: 1s;
+}
+/*--Up-btn--*/
+.hero-btn-up{
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(14, 6, 6);
+    border: 1px solid rgb(8, 6, 6);
+    border-radius: 100%;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    margin-left: 80%;
+}
+.hero-btn-up:hover{
+    border: 1px solid #a36f3486;
+    background: #a36f3486;
+    transition: 1s;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    } 
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #a36f3486;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+/*--Naša priča--*/
+.oNama{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+color: #070106;
+font-size: 18px;
+font-weight: 300;
+line-height: 22px;
+padding: 10px;   
+}
+.row{
+    margin: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.oNama-col{
+    flex-basis: 31%;
+    background: #a36f3486;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.oNama-col:hover{
+    box-shadow: 0 0 20px 0 px rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+}
+/*--proizvodi-page--*/
+.sub-header-proizvodi{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(assets/proizvodi.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    border-radius: 10px;
+}
+.sub-header-proizvodi p{
+    color: #fff;
+    font-size: 24px;
+    margin-top: -20px;
+}
+.sub-header-proizvodi h1{
+    margin-top: -200px;
+}
+
+/*--proizvodi-content--*/
+
+.proizvodi{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.proizvodi p{
+    font-size: 20px;
+}
+.proizvodi-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.layer h3{
+    color: #fff;
+    width: 100%;
+    font-weight: 500;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5;
+}
+.proizvodi-col img{
+    width: 100%;
+    display: block;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background-color: #a36f3486;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+/*--scrubovi page--*/
+.layer2{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer2 h3{
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5;
+}
+.layer2:hover{
+    background-color: #a36f3486;
+}
+.layer2:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+/*--blog-page--*/
+.sub-header-blog{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(assets/blog.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    border-radius: 10px;
+}
+.sub-header-blog h1{
+    margin-top: -200px;
+}
+.sub-header-blog p{
+    color: #fff;
+    font-size: 24px;
+    margin-top: -20px;
+}
+@media(max-width: 700px){
+    .blog h1{
+        font-size: 24px;
+    }
+}
+/*--blog-content--*/
+.blog{
+    margin: auto;
+    width: 80%;
+    padding: 60px 0;
+}
+.blog-col img{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+.blog-col{
+    flex-basis: 70%;
+    text-align: left;
+  
+}
+.blog-col h3{
+    font-size: 36px;
+}
+.blog-col p{
+    font-size: 20px;
+}
+.blog .hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(10, 5, 5);
+    border: 1px solid rgb(8, 4, 4);
+    padding: 12px 34px;
+    font-size: 12px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.blog .hero-btn:hover{
+    border: 1px solid #a36f3486;
+    background: #a36f3486;
+    transition: 1s;
+}
+/*--Blog-clanci--*/
+.clanak h3{
+    text-align: center;
+    font-size: 42px;
+}
+.clanak img{
+    height: 50%;
+    width: 40%;
+    border-radius: 10%;
+}
+.clanak p{
+    text-align: left;
+    font-size: 18px;
+}
+/*--kontakt-page--*/
+.sub-header-kontakt{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(assets/connect.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    border-radius: 10px;
+}
+.sub-header-kontakt h1{
+    margin-top: -200px;
+}
+.sub-header-kontakt p{
+    color: #fff;
+    font-size: 24px;
+    margin-top: -20px;
+}
+
+/*--Kontakt-content--*/
+
+.kontakt{
+    text-align: center;
+
+}
+.kontakt h3{
+    font-size: 26px;
+    color: black;
+}
+
+.kontakt-col{
+    flex-basis: 45%;
+    background: #a36f3486;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.kontakt-col img{
+    height: 20%;
+    width: 5%;
+    position: relative;
+}
+.kontakt .hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color:rgb(10, 5, 5);
+    border: 1px solid rgb(8, 4, 4);
+    padding: 12px 34px;
+    font-size: 20px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.kontakt .hero-btn:hover{
+    border: 1px solid #a36f3486;
+    background-image: url(assets/ps1.jpg);
+    transition: 1s;
+}
+/*--kontakt-mapa--*/
+.location{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.location iframe{
+    width: 100%;
+}
+.row-map{
+    padding: 20px 12px;
+    margin-top: -5%;
+    background: #a36f3486;
+    width: 49%;
+    margin-left: 25%;
+    border-radius: 3%;
+}
+/*--kontakt-poruka--*/
+.kontakt input, .kontakt textarea{
+    margin-top: 0.8%;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 30%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #0a090786;
+    box-sizing: border-box;
+}
+/*--footer--*/
+.footer{
+    margin-top: -50px;
+        text-align: center;
+        width: 100%;
+    }
+.footer h4{
+    margin-bottom: 25px;
+    
+    font-weight: 600;
+    position:relative;
+    top: 20px;
+}
+.icons-footer img{
+    height: 1.5%;
+    width: 1.5%;
+    position: relative;
+    bottom: 0px;
+}

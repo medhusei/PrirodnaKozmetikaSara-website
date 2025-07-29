@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Prirodna kozmetika Sara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+    <body>
+<section class="header">
+    <nav>
+        <!--link na pocetnu: <a href="1pocetna.html"></a>-->
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="1pocetna.html">Početna</a></li>
+                <li><a href="2proizvodi.html">Proizvodi</a></li>
+                <li><a href="3blog.html">Blog</a></li>
+                <li><a href="4kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+        <img src="assets/21.png"></a>
+        <p><a href="#oNama" class="hero-btn-pocetna">O nama</a></p>
+    </div>
+</section>
+<!--O nama-->
+<section class="oNama">
+    <div id="oNama">
+    <h1>~ Naša priča ~</h1>
+    <p>Inspirisani prirodnim ljepotama naše zemlje, 2017.godine započinjemo priču koja nikada nije bila samo biznis. Ideja je bila da iskoristimo
+        sve moguće resurse u okolini našeg malog mjesta i napravimo proizvode za njegu tijela. Vremenom, sobica u kojoj smo miješali prve sapune,
+        isprobavali kombinacije cvjetnih ulja u kupkama i razmišljali o novim receptima za njegu kože, prerasla je u firmu koja vam na vrata donosi
+        mirise istoka, sastojke iz Azije i beauty rutine Afrikanki.
+    </p>
+    <div class="row">
+        <div class="oNama-col">
+            <h3>Zašto?</h3>
+            <p>Vjerujemo da za svaki problem-postoji rješenje u prirodi. Samo ga trebamo naći.
+                Svjedoci smo da koliko dobra nam donosi hemija, toliko je i ne želimo u proizvodima koje svakodnevno koristimo.
+                Nježni sastojci iz prirode nam sigurno ne mogu naškoditi.
+            </p>
+        </div>
+        <div class="oNama-col">
+            <h3>Kako?</h3>
+            <p>Vrijedne ruke naših radnica i radnika, pažljivo biraju sastojke i sva naša kozmetika je ručno rađena.
+                Kako bismo bili sigurni da do Vas dolazi kvalitetan proizvod, svi sastojci i gotovi proizvodi se skladište u posebno opremljenim prostorijama sa
+                posebnim uslovima vlažnosti, svjetlosti i propisno su upakovani.
+            </p>
+        </div>
+        <div class="oNama-col">
+            <h3>Za koga?</h3>
+            <p>Naši proizvodi su dovoljni nježni da su pogodni za mekanu kožu beba, a i izuzetno snažni da se suprotstave upornim aknama,
+                diskoloraciji kože, problemima sa usnom šupljinom isl. Namijennjeni su kako damama, tako i muškarcima koji ne žele svoju kožu prepustiti slučaju.
+            </p>
+        </div>
+    </div>
+    </div>
+</section>
+<!--Up btn-->
+<a href="#navLinks" class="hero-btn-up">Početna</a>
+<!--Footer-->
+<section class="footer">
+    <h4>~ Prirodna kozmetika Sara ~</h4>
+    <div class="icons-footer">
+        <a href="https://www.facebook.com"><img src="assets/fb.png"></a>
+        <a href="https://www.instagram.com"><img src="assets/ing.png"></a>
+
+    </div>
+
+</section>
+
+<!--JavaScript za show/hide Menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200";
+    }
+</script>
+    </body>
+</html>
+

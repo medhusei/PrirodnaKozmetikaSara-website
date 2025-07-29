@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Prirodna kozmetika Sara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+    <body>
+<section class="sub-header-proizvodi">
+    <nav>
+        <a href="1pocetna.html"><img src="assets/21.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="1pocetna.html">Početna</a></li>
+                <li><a href="2proizvodi.html">Proizvodi</a></li>
+                <li><a href="3blog.html">Blog</a></li>
+                <li><a href="4kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+    <h1>~ Sve što vam je potrebno ~</h1>
+    <p>Odaberite kategoriju koja vas zanima i pronađite nešto za sebe</p>
+</div>
+</section>
+
+<!--Proizvodi-->
+<section class="proizvodi">
+    
+    <div class="row">
+        <div class="proizvodi-col">
+            <img src="assets/scrub.jpg">
+            <div class="layer">
+                <a href="2.1Scrubovi.html"><h3>Scrubovi</h3></a>
+            </div>
+        </div>
+        <div class="proizvodi-col">
+            <img src="assets/kupka1.jpg">
+            <div class="layer">
+                <a href="2.2.kupka.html"><h3>Kupke</h3></a>
+            </div>
+        </div>
+        <div class="proizvodi-col">
+            <img src="assets/sapun.jpg">
+            <div class="layer">
+                <a href="2.3.sapun.html"><h3>Sapuni</h3></a>
+            </div>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="proizvodi-col">
+            <img src="assets/zubi1.jpg">
+            <div class="layer">
+                <a href="2.4.dizubi.html"><h3>Zubi i desni</h3></a>
+            </div>
+        </div>
+        <div class="proizvodi-col">
+            <img src="assets/krema.jpg">
+            <div class="layer">
+                <a href="2.5.kreme.html"><h3>Kreme</h3></a>
+            </div>
+        </div>
+        <div class="proizvodi-col">
+            <img src="assets/lavanda.jpg">
+            <div class="layer">
+                <a href="2.6.ulja.html"><h3>Ulja</h3></a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!--Footer-->
+<section class="footer">
+    <h4>~ Prirodna kozmetika Sara ~</h4>
+    <div class="icons-footer">
+        <a href="https://www.facebook.com"><img src="assets/fb.png"></a>
+        <a href="https://www.instagram.com"><img src="assets/ing.png"></a>
+
+    </div>
+
+</section>
+
+<!--JavaScript za show/hide Menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200";
+    }
+</script>
+    </body>
+</html>
+

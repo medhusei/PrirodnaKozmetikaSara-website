@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Prirodna kozmetika Sara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+    <body>
+<section class="sub-header-kontakt">
+    <nav>
+        <a href="1pocetna.html"><img src="assets/21.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="1pocetna.html">Početna</a></li>
+                <li><a href="2proizvodi.html">Proizvodi</a></li>
+                <li><a href="3blog.html">Blog</a></li>
+                <li><a href="4kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+        <h1>~ Javite nam se ~</h1>
+        <p>Ako imate pitanje, sugestiju ili želite da popričamo o njezi kože, pošaljite nam poruku i neko od stručnjaka će Vam se javiti.</p>
+    </div>
+</section>
+<!--Poruka-->
+<section class="kontakt">
+<form action="kontaktphp.php" method="post">
+    <input type="text" name="ime" placeholder="Upišite Vaše ime" required>
+    <input type="text" name="email" placeholder="Upišite Vašu mail adresu" required>
+    <input type="text" name="naslov" placeholder="Upišite naslov" required>
+    <textarea rows="8" name="poruka" placeholder="Poruka" required></textarea><br>
+    <button type="submit" class="hero-btn">Pošaljite poruku</button><br><br><br><br><br>
+</form>
+</section>
+<!--<section class="kontakt">
+    <div class="row">
+        <div class="kontakt-col">
+            <h3>Pratite nas</h3>
+            
+
+            <a href="https://www.facebook.com"><img src="assets/fb.png"></a>
+        <a href="https://www.instagram.com"><img src="assets/ing.png"></a>
+
+        </div>
+        <div class="kontakt-col">
+            <h3>Pišite nam</h3>
+            
+            <a href="" class="hero-btn">Želim poslati poruku</a>       
+        </div>
+    </div>
+</section>-->
+
+<!--Footer-->
+<section class="footer">
+    <h4>~ Prirodna kozmetika Sara ~</h4>
+    <div class="icons-footer">
+        <a href="https://www.facebook.com"><img src="assets/fb.png"></a>
+        <a href="https://www.instagram.com"><img src="assets/ing.png"></a>
+
+    </div>
+
+</section>
+
+<!--JavaScript za show/hide Menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200";
+    }
+</script>
+    </body>
+</html>
+

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width, initial-scale=1.0">
+        <title>Prirodna kozmetika Sara</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+</head>
+    <body>
+<section class="sub-header-proizvodi">
+    <nav>
+        <a href="1pocetna.html"><img src="assets/21.png"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="1pocetna.html">Početna</a></li>
+                <li><a href="2proizvodi.html">Proizvodi</a></li>
+                <li><a href="3blog.html">Blog</a></li>
+                <li><a href="4kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+    <h1>~ Sve što vam je potrebno ~</h1>
+    <p>Poslije čišćenja nahranite kožu laganim kremama.</p>
+</div>
+</section>
+
+<!--Scrubovi-->
+<section class="proizvodi">
+    
+    <div class="row">
+        <div class="proizvodi-col">
+            <h2>Vitamin boost</h2>
+            <img src="assets/5kreme/c-vitamin.jpg">
+            <div class="layer2">
+                <h3><br>Krema sa c vitaminom<br><br>Sastojci:<br>~ c vitamin<br>~ e vitamin<br>~ narandža<br>~ palmino ulje<br>~ destilovana voda</h3>
+            </div>
+        </div>
+        <div class="proizvodi-col">
+            <h2>Hydrate</h2>
+            <img src="assets/5kreme/kokos.jpg">
+            <div class="layer2">
+                <h3><br>Krema za suhu kožu<br><br>Sastojci:<br>~ kokosovo ulje<br>~ mlijeko<br>~ aloe vera<br>~ d vitamin<br>~ e vitamin<br>~ destilovana voda</h3>
+            </div>
+        </div>
+        <div class="proizvodi-col">
+            <h2>Hello matte</h2>
+            <img src="assets/5kreme/masline.jpg">
+            <div class="layer2">
+                <h3><br>Krema za masnu kožu<br><br>Sastojci:<br>~ čajevac<br>~ c vitamin<br>~ d vitamin<br>~ e vitamin<br>~ maslinovo ulje
+                <br>~ aloe vera<br>~ destilovana voda</h3>
+            </div>
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="proizvodi-col">
+            <h2>No more burn</h2>
+            <img src="assets/5kreme/med.jpg">
+            <div class="layer2">
+                <h3><br>Krema za upaljenu kožu<br><br>Sastojci:<br>~ med<br>~ kurkuma<br>~ kantarionovo ulje<br>~ čajevac ulje<br>~ eterično ulje kamilice<br>~ aloe vera
+                <br>~ destilovana voda</h3>
+            </div>
+        </div>
+        <div class="proizvodi-col">
+            <h2>Sensitive</h2>
+            <img src="assets/5kreme/ruža.jpg">
+            <div class="layer2">
+                <h3><br>Krema za osjetljivu kožu<br><br>Sastojci:<br>~ ulje ruže<br>~ ružina vodica<br>~ bjelanjak jajeta u prahu<br>~ aloe vera<br>~ eterično ulje kamilice<br>~ destilovana voda</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Footer-->
+<section class="footer">
+    <h4>~ Prirodna kozmetika Sara ~</h4>
+    <div class="icons-footer">
+        <a href="https://www.facebook.com"><img src="assets/fb.png"></a>
+        <a href="https://www.instagram.com"><img src="assets/ing.png"></a>
+
+    </div>
+
+</section>
+
+<!--JavaScript za show/hide Menu-->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200";
+    }
+</script>
+    </body>
+</html>
+
